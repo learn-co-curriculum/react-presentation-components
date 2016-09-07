@@ -32,7 +32,7 @@ But here's the rub. When we say that some component is "presentational" *we
 definitely do not mean* that the component is a formal type or class defined
 by the React library. There is no such thing as type `PresentationalComponent`
 in the React library. Rather, what we are dealing with here is simply a useful
-*convention*, or better yet, a *programming pattern* that coders who have used
+*convention*, or, better yet, a *programming pattern* that coders who have used
 React have found themselves following over and over again as they compose
 their component-based React UIs.
 
