@@ -9,14 +9,14 @@ By the end of this lesson, you will be able to:
 2. Describe how we can add interactivity to "dumb" components
 3. Explain how to use stateless functional components
 
-# What makes a component presentational?
+# What makes a component "presentational"?
 
 The answer to this question is, as you may have guessed, is that a presentational
 component is a component whose primary responsibility is to render some piece
 of the beautiful user interfaces that we get to build as web developers. Their
 job, in other words, is to look good!
 
-![](https://media.giphy.com/media/oLz0TmduZsUjm/giphy.gif)
+![I'm So Pretty](https://media.giphy.com/media/oLz0TmduZsUjm/giphy.gif)
 
 There is, however, a bit more thinking that we need to do here, just so we
 understand perfectly what it means when we say that a component is of the type
