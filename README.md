@@ -6,7 +6,8 @@ In this lesson, we will examine a specific "type" of React component known as a
 By the end of this lesson, you will be able to:
 
 1. Explain the benefits of presentation components
-2. Describe how we can add interactivity to "dumb" components
+2. Describe how we can add interactivity to presentational components
+   by adding a callback function as a prop
 3. Explain how to use stateless functional components
 
 # What makes a component "presentational"?
@@ -111,7 +112,8 @@ that's not all we've accomplished here. The component also establishes a
 straightforward API for all our text fields consisting of an `onChange` callback
 -- because in most cases our `<input>`s are going to need to perform some action
 when the users type -- and a `limit` for the amount of characters that a user
-can enter in the field.
+can enter in the field. So although our presentational component is simple, it
+can still have a degree of interactivity through the addition of callbacks.
 
 Now, of course, we can argue about whether wrapping the `<input>` field in this
 way is a good idea. After all, `<input>`s are nice simple implementations in their
