@@ -173,9 +173,11 @@ always return the same UI output if given the same `props` input. There
 are no state variables here that could be set to different values at different
 times that might lead the function to return something that we didn't predict.
 What we have here, then, is what in functional terms is called a "pure" or
-"referentially transparent"  function. Our UI has become just a bit more predictable.
+"referentially transparent"  function.  Our UI has become just a bit more predictable.
 And, as web developers who've worked on the front-end, we know what a boon that
-is, don't we?
+is, don't we? (To review pure functions at greater length, see
+[this lesson](https://github.com/learn-co-curriculum/javascript-pure-functions)
+on the theme.)
 
 ## Resources
 - ["Software Design Patterns"](https://en.wikipedia.org/wiki/Software_design_pattern) (Wikipedia)
