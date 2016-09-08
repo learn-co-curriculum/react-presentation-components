@@ -138,7 +138,7 @@ stateless, they have a better chance of remaining blissfully bug free!
 This is the power and importance of presentational components. They are simple
 and they just work. So therefore we should strive to use them as much as possible.
 
-## Statelessness & The "Stateless Functional" Component
+## The "Stateless Functional" Component & "Pure" Functions
 
 What if I told you we can actually make our presentational components even
 simpler? Well we can, and here's why: Remember how one of the principles in
