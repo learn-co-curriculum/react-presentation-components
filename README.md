@@ -90,14 +90,13 @@ With React, we can do much better! Consider this `TextField` component:
 
 ```javascript
 const defaultLimit = 100
-const noop = () => {}
 
 export default class TextField extends React.Component {
   render() {
     // Assume that we have the css classes defined elsewhere.
     return <input
              className="field field-light"
-             onChange={this.props.onChange || noop}
+             onChange={this.props.onChange}
              maxLength={this.props.limit || defaultLimit} />
   }
 }
@@ -153,13 +152,12 @@ So what's this look like? Here's our `TextField` component rendered as a so-call
 
 ```javascript
 const defaultLimit = 100
-const noop = () => {}
 
 export default function TextField(props) {
   return (
     <input
       className="field field-light"
-      onChange={this.props.onChange || noop}
+      onChange={this.props.onChange}
       limit={this.props.limit || defaultLimit} />
   );
 }
