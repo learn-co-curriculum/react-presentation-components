@@ -45,7 +45,7 @@ of defining features:
 * they rarely have any internally changeable `state` properties;
 * and, they are best written as stateless functional components.
 
-Okay so there's our pattern description. Now let's jump into some code and see
+Okay, so there's our pattern description. Now let's jump into some code and see
 how presentation components actually look in practice.
 
 ## Surprise, You've already written presentational components!
