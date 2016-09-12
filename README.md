@@ -71,7 +71,7 @@ to fetch or reload the `message` data that it takes in as a `prop`; that has
 no changeable state; and that only contains a render method. So, I think we can 
 safely say it's pretty well presentational.
 
-## Okay great, but when would we ever need such a simple component?
+## Great, but when would we need such a simple component?
 
 Good question! Our `HelloWorld` example is obviously not a very real-world example,
 but consider this: let's say we are working on a massive web application, and we'd
