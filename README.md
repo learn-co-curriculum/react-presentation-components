@@ -127,7 +127,7 @@ Good.
 
 Now imagine that it's not just the `TextField` that our team has executed
 in this way, but say we've also defined a `<Header />` and a `<Footer />`, as
-well, of course, as other more unique and customized modules that are still
+well as other more unique and customized modules that are still
 primarily presentational. Imagine further that we've composed the majority of our
 UI out of these simple presentational components -- all of them almost entirely
 stateless, all of them designed to do one thing and one thing well: they just
