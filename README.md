@@ -122,7 +122,7 @@ the field above is potentially a great win for simplicity in our app. It specifi
 defines what we mean by a text input; it does so in a way that arguably covers
 the majority of use-cases we can imagine for a simple text input; and it provides
 this definition in one place that can be found and updated easily in the future.
-Win, win, win. Are we beginning to see the power off presentational components? 
+Win, win, win. Are we beginning to see the power of presentational components?
 Good.
 
 Now imagine that it's not just the `TextField` that our team has executed
