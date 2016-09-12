@@ -151,7 +151,7 @@ a Javascript object of type `Component` at all. It can just be a simple function
 So what's this look like? Here's our `TextField` component rendered as a so-called
 `functional stateless` component (a feature available in React since v0.14):
 
-```
+```javascript
 const defaultLimit = 100
 const noop = () => {}
 
