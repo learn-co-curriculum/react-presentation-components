@@ -65,7 +65,7 @@ const HelloWorld = React.createClass({
 })
 ```
 
-Okay, so does this fit our pattern? Absolutely, it does. Here is a component
+So does this fit our pattern? Absolutely, it does. Here is a component
 that does nothing but render a piece of our UI; that has no notion of how
 to fetch or reload the `message` data that it takes in as a `prop`; that has
 no changeable state; and that only contains a render method. So, I think we can 
