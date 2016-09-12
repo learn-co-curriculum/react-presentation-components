@@ -146,7 +146,7 @@ our checklist for the presentational component pattern was that the component
 (probably) does not have state? Well, if in fact we can create a component
 that has no state, that means that our component doesn't even really need to be
 a Javascript object of type `Component` at all. It can just be a simple function
-&mdash; -- one that takes an input and returns a (portion of) the UI.
+&mdash; one that takes an input and returns a (portion of) the UI.
 
 So what's this look like? Here's our `TextField` component rendered as a so-called
 "functional stateless" component (a feature available in React since v0.14):
