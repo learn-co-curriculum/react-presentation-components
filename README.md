@@ -48,7 +48,7 @@ of defining features:
 Okay, so there's our pattern description. Now let's jump into some code and see
 how presentation components actually look in practice.
 
-## Surprise, You've already written presentational components!
+## Surprise, you've already written presentational components!
 
 Yep, this is true. Think about it. If a presentational component is simply
 a component that doesn't know anything about how to get the data it displays,
