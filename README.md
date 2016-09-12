@@ -69,7 +69,7 @@ So does this fit our pattern? Absolutely, it does. Here is a component
 that does nothing but render a piece of our UI; that has no notion of how
 to fetch or reload the `message` data that it takes in as a `prop`; that has
 no changeable state; and that only contains a render method. So, I think we can 
-safely say it's pretty well presentational.
+safely say it fits the pattern well.
 
 ## Great, but when would we need such a simple component?
 
