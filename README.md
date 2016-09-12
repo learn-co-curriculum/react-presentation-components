@@ -12,7 +12,7 @@ By the end of this lesson, you will be able to:
 
 # What makes a component "presentational"?
 
-The answer to this question is, as you may have guessed, is that a presentational
+The answer to this question, as you may have guessed, is that a presentational
 component is a component whose primary responsibility is to render some piece
 of the beautiful user interfaces that we get to build as web developers. Their
 job, in other words, is to look good!
