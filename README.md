@@ -156,10 +156,12 @@ const defaultLimit = 100
 const noop = () => {}
 
 export default function TextField(props) {
-	return <input
-					 className="field field-light"
-					 onChange={this.props.onChange || noop}
-					 limit={this.props.limit || defaultLimit} />
+  return (
+    <input
+      className="field field-light"
+      onChange={this.props.onChange || noop}
+      limit={this.props.limit || defaultLimit} />
+  );
 }
 ```
 Now isn't that just beautiful? It really is. It's just so concise. We've discarded
