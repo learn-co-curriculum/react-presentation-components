@@ -169,9 +169,9 @@ all that ugly boilerplate. But it's not only concision that makes this beautiful
 By transforming our component into a stateless function, we have made our
 `TextField` component an extremely stable and predictable part of our application.
 
-The predictability comes from the fact -- and here we can see the influence on
-React of the principles of functional programming -- that this function will
-always return the same UI output if given the same `props` input. There
+The predictability comes from the fact -- and here we can see the influence of
+the principles of functional programming on React -- that this function will
+always return the same UI output if given the same `props`. There
 are no state variables here that could be set to different values at different
 times that might lead the function to return something that we didn't predict.
 What we have here, then, is what in functional terms is called a "pure" or
