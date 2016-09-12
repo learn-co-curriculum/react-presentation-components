@@ -149,7 +149,7 @@ a Javascript object of type `Component` at all. It can just be a simple function
 &mdash; -- one that takes an input and returns a (portion of) the UI.
 
 So what's this look like? Here's our `TextField` component rendered as a so-called
-`functional stateless` component (a feature available in React since v0.14):
+"functional stateless" component (a feature available in React since v0.14):
 
 ```javascript
 const defaultLimit = 100
