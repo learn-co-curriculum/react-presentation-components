@@ -22,7 +22,7 @@ job, in other words, is to look good!
 There is, however, a bit more thinking that we need to do here, just so we
 understand precisely what it means when we say that a component is of the type
 "presentational." Very often
-when we speak of classes or categories of things in world of programming, the types or
+when we speak of classes or categories of things in the world of programming, the types or
 classes that we are discussing are actually formalized in the libraries or
 languages themselves. Think, for example, of when we declare a React `Component.`
 When we do that we write either `React.createClass()` or (using the ES2015 format)
