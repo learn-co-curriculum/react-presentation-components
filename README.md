@@ -93,10 +93,12 @@ const defaultLimit = 100
 
 export default class TextField extends React.Component {
   render() {
-    return <input
-             className="field field-light"
-             onChange={this.props.onChange}
-             maxLength={this.props.limit || defaultLimit} />
+    return (
+      <input
+        className="field field-light"
+        onChange={this.props.onChange}
+        maxLength={this.props.limit || defaultLimit} />
+    );
   }
 }
 ```
