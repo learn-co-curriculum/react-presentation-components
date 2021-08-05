@@ -9,7 +9,7 @@ In this lesson, we will examine a specific "type" of React component known as a
 
 1. Explain the benefits of presentational components
 2. Describe how we can add interactivity to presentational components by adding a
-callback function as a prop
+   callback function as a prop
 3. Explain how to use stateless functional components
 
 ## What makes a component "presentational"?
@@ -23,29 +23,28 @@ the what user sees. Their job, in other words, is to look good!
 There is, however, a bit more thinking that we need to do here. Very often when we speak of classes or categories of things in
 the world of programming, the types or classes that we are discussing are
 actually formalized in the libraries or languages themselves. Think, for example
-of when we declare a React `Component.` We write `class SomeComponent extends
-Component`. Either way, we are creating an actual instance of `Component`.
+of when we declare a React `Component.` We write `class SomeComponent extends Component`. Either way, we are creating an actual instance of `Component`.
 
-But here's the rub. When we say that some component is "presentational" *we
-definitely do not mean* that the component is a formal type or class defined by
+But here's the rub. When we say that some component is "presentational" _we
+definitely do not mean_ that the component is a formal type or class defined by
 the React library. There is no such thing as type `PresentationalComponent` in
 the React library. Rather, what we are dealing with here is simply a useful
-*convention*, or, better yet, a *programming pattern* that coders who have used
+_convention_, or, better yet, a _programming pattern_ that coders who have used
 React have found themselves following over and over again as they compose their
 component-based React UIs.
 
 So what defines the presentational component pattern? Here's a list of defining features:
 
-* Presentational components are primarily concerned with how things look
+- Presentational components are primarily concerned with how things look
 
-* If they are class components, they probably only contain a render method. If
-functional, they just return some JSX
+- If they are class components, they probably only contain a render method. If
+  functional, they just return some JSX
 
-* They do not know how to alter the data that they render
+- They do not know how to alter the data that they render
 
-* They rarely have any internally changeable `state` properties
+- They rarely have any internally changeable `state` properties
 
-* They are best written as stateless functional components
+- They are best written as stateless functional components
 
 Okay, so there's our pattern description. Now let's jump into some code and see
 how presentation components actually look in practice.
@@ -59,10 +58,12 @@ beginning. A simple `HelloWorld` component, for example, is almost certainly
 presentational. Let's see if that's right &mdash; we'll even give our component
 the ability to take a prop:
 
-```javascript
+```jsx
 class HelloWorld extends Component {
   render() {
-    return <div className="hello-world">Hello {this.props.message || 'World' }</div>;
+    return (
+      <div className="hello-world">Hello {this.props.message || "World"}</div>
+    );
   }
 }
 ```
@@ -78,7 +79,7 @@ fits the pattern well.
 Good question! Our `HelloWorld` example is obviously not a very real-world
 example, but consider this: let's say we are working on a massive web
 application, and we'd like to standardize as well as place some limits on the
-characteristics of the  text inputs used throughout the application's forms.
+characteristics of the text inputs used throughout the application's forms.
 
 In this case, we could certainly establish a style guide that dictates that all uses of `<input>` use a specific set of CSS classes,
 defined in our stylesheets. But this leaves our app open to a lot of human
@@ -89,8 +90,8 @@ be provided to our inputs wide open.
 
 With React, we can do much better! Consider this `TextField` component:
 
-```javascript
-const defaultLimit = 100
+```jsx
+const defaultLimit = 100;
 
 class TextField extends Component {
   render() {
@@ -155,15 +156,16 @@ So what's this look like? Here's our `TextField` component rendered as a
 so-called "functional stateless" component (a feature available in React since
 v0.14):
 
-```javascript
-const defaultLimit = 100
+```jsx
+const defaultLimit = 100;
 
-const TextField = (props) =>
+const TextField = (props) => (
   <input
     className="field field-light"
     onChange={props.onChange}
     limit={props.limit || defaultLimit}
-  />;
+  />
+);
 ```
 
 Now isn't that just beautiful? It really is. It's just so concise. We've
@@ -178,7 +180,7 @@ always return the same UI output if given the same `props`. There are no state
 variables here that could be set to different values at different times that
 might lead the function to return something that we didn't predict. What we have
 here, then, is what in functional terms is called a "pure" or "referentially
-transparent"  function.  Our UI has become just a bit more predictable. And, as
+transparent" function. Our UI has become just a bit more predictable. And, as
 web developers who've worked on the front-end, we know what a boon that is,
 don't we? (To review pure functions at greater length, see [this
 lesson](https://github.com/learn-co-curriculum/javascript-pure-functions) on the
@@ -198,9 +200,7 @@ one design pattern available and newer features in React allow for alternative d
 We continue to include this content because it is important as someone new to React
 that you play around and become more familiar with the different ways you can use
 components. You will be better equipped to understand the newer features of React by
-first practicing some patterns that, while no longer emphasized, are closer to 
+first practicing some patterns that, while no longer emphasized, are closer to
 object-oriented patterns we've seen previously. Once finished with the materials in
-this course, we encourage you to visit [https://reactjs.org/](https://reactjs.org/) and 
+this course, we encourage you to visit [https://reactjs.org/](https://reactjs.org/) and
 read up on the newest ways in which we can structure components.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/react-presentation-components'>Presentation Components</a> on Learn.co and start learning to code for free.</p>
